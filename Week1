@@ -1,0 +1,45 @@
+#task1
+import random
+name_input = input("What is your name? ")
+number = random.randint(1,10)
+print("Hello " + name_input + ", I am thinking of a number between 1 and 10...")
+guess = int(input("Would you care to take a guess?"))
+if guess == number:
+    print("Amazing " + name_input + ", you guessed my number!")
+else:
+    print("Ooops " + name_input + ", you guessed wrong.... better luck next time")
+    
+    #task2
+number_input = input("What is your favourite number between 1 and 100? ")
+if number_input == 1: 
+    print("Why did the chicken cross the road?")
+elif number_input == 2:
+    print("What do you call a french sandal?")
+else:
+    print("Whats pink and spongy?")
+    
+    #task3
+food_input = input("What is your favourite starter, main course and desert? ")
+drink_input = input("Now what is your favourite drink? ")
+print("Your favourite meal is", food_input, "followed by a glass of", drink_input)
+
+#task4
+motorbike_value = 2000
+while motorbike_value>1000:
+    print("The value of the motorbike is:", motorbike_value)
+    motorbike_value=motorbike_value*0.9
+    
+    #task5 I was unsure about the use of square - i did research but just got confused on the symbols.
+number_input1 = int(input("Enter a number? "))
+number_input2 = int(input("Enter a second number? "))
+menu_input = input("What would you like to do? To add the numbers together type a, to subtract its b, to divide type c, to multiply its d or to the power of type e. ")
+if menu_input == "a":
+    print(int(number_input1 + number_input2))
+elif menu_input == "b":
+    print(int(number_input1 - number_input2))
+elif menu_input == "c":
+    print(float(number_input1 / number_input2))
+elif menu_input == "d":
+    print(int(number_input1 * number_input2))
+else:
+    print(int(number_input1 ** number_input2))

@@ -1,0 +1,43 @@
+# Task 1 - writing to a file
+my_file = open("numbers.txt", "w")
+
+my_file.write("3, 45, 83, 21")
+my_file.write("\n")
+my_file.close()
+
+print(data)
+
+# appending a file
+my_file = open("numbers.txt", "a")
+my_file.write("Where are my numbers?")
+my_file.close()
+
+with open ("numbers.txt", "r") as myfile:
+    data = myfile.read().replace('/n', ',')
+ my_file.close()
+ 
+ print(data)
+ 
+ # Task 2 - program asking student for their exam mark as a %
+# display this as corresponding grade
+
+score = int(input("Student - enter your percentage exam score between 0-100:" + "%"))
+if score >=90:
+    print("That exam score is a grade A*")
+elif score>=80:
+    print("That exam score is a grade A")
+elif score>=70:
+    print("That exam score is a grade B")
+elif score>=60:
+    print("That exam score is a grade C")
+else:
+    print("That exam score is a grade F")
+    
+print ("Exam score notes: 90+ = A*, 80-89 = A, 70-79 = B, 60-69 = C & Below 60 = F")
+target = int(input("What is your target score between 0-100?" + "%"))
+if score >target:
+    print ("Amazing you have exceeded your target grade - give yourself a pat on the back")
+elif score == target:
+    print ("Well done you have achieved your target grade")
+else:
+    print ("Oh dear, you didnt achieve your target grade this time, get those books out and study")

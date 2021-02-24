@@ -1,0 +1,47 @@
+#Task1 Create your own Data Flow Diagram (DFD), a subject of your own choice and convert it into code. Delivery options for online food orders during Covid19
+print("Thank you for your order, do you want delivery?")
+
+delivery_input = input("enter Y for yes or N for no")
+
+if delivery_input == "N": 
+    print("Please collect your order from the takeover when the app tells you to.")
+elif delivery_input == "Y"
+    print("We are covid19 compliant. Do you want a contactless delivery?")
+    contactless_input = input("enter Y for yes or N for no")
+    
+if contactless_input == "N": 
+    print("We will ring your doorbell when we arrive with your order and step back in order to abide with social distancing")
+elif delivery_input == "Y":
+    print("We will call you to let you know your order has been delivered. Please enter your phone number.")
+    phone_input = input("phone number")
+def maths(number_input1,number_input2):
+    menu_input = input("What would you like to do? To add the numbers together type a, to subtract its b, to divide type c, to multiply its d, to the power its e or to square type f. ")
+      
+print("See you later :)")
+
+
+#Week3 Task 3: Write a programme which will ask for two numbers from a user. Then offer a menu to the user giving them a choice of maths operators. Once the user has selected which operator they wish to use, perform the calculation by using a procedure and passing parameters.
+def maths(number_input1,number_input2):
+    menu_input = input("What would you like to do? To add the numbers together type a, to subtract its b, to divide type c, to multiply its d, to the power its e or to square type f. ")
+    
+    if menu_input == "a":
+        print (number_input1+number_input2)
+    elif menu_input == "b":
+        print (number_input1-number_input2)
+    elif menu_input == "c":
+        print (number_input1/number_input2)
+    elif menu_input == "d":
+        print (number_input1*number_input2)
+    elif menu_input == "e":
+        print (number_input1*number_input2)
+    elif menu_input == "f":
+        print (number_input1//number_input2)
+
+print("Welcome to my maths game, I would like you to enter two numbers you would like to use? ")
+
+number_input1 = int(input("Enter your first number? "))     
+number_input2 = int(input("Enter a second number? "))
+
+maths(number_input1,number_input2)
+       
+        
